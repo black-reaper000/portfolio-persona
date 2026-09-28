@@ -1,9 +1,11 @@
 # Persona Style Portfolio
 
-A personal portfolio website inspired by the visual style of Persona 3.
+A personal portfolio website inspired by the visual style of Persona 3 Reload.
 
 I made this project to practice web development, UI design, animations,
 transitions, and interactive layouts.
+
+🎮 **Live Demo**: [https://black-reaper000.github.io/portfolio-persona/](https://black-reaper000.github.io/portfolio-persona/)
 
 ## About
 
