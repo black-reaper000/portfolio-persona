@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio // Reload</title>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="video.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+<div class="scanlines"></div>
+
+<main class="portfolio">
+
+    <!-- LEFT: MAIN MENU -->
+    <aside class="left-menu">
+        <div class="menu-caption">MADE BY SHUN / PERSONA 3 UI PORTFOLIO</div>
+        <nav class="menu" aria-label="Main navigation">
+            <button class="menu-item selected" data-screen="about" type="button">
+                <span class="item-arrow">▶</span><span class="item-number">01</span><span class="item-label">ABOUT</span><span class="item-decor"></span>
+            </button>
+            <button class="menu-item" data-screen="projects" type="button">
+                <span class="item-arrow">▶</span><span class="item-number">02</span><span class="item-label">PROJECTS</span><span class="item-decor"></span>
+            </button>
+            <button class="menu-item" data-screen="skills" type="button">
+                <span class="item-arrow">▶</span><span class="item-number">03</span><span class="item-label">SKILLS</span><span class="item-decor"></span>
+            </button>
+            <button class="menu-item" data-screen="contact" type="button">
+                <span class="item-arrow">▶</span><span class="item-number">04</span><span class="item-label">CONTACT</span><span class="item-decor"></span>
+            </button>
+        </nav>
+    </aside>
+
+    <!-- CENTER: VISUAL / PROJECT CARD -->
+    <section class="preview-area" aria-label="Visual preview">
+
+        <div class="preview active" id="preview-about">
+            <div class="about-art">
+                <img src="about.jpg" alt="About me artwork" class="about-image">
+                <div class="about-slash slash-one"></div>
+                <div class="about-slash slash-two"></div>
+                <div class="about-number">01</div>
+            </div>
+        </div>
+
+        <div class="preview" id="preview-projects">
+            <div class="project-card">
+                <div class="project-image-wrap">
+                    <img id="project-image" src="projects/niple.svg" alt="Niple project preview">
+                    <div class="image-label">PROJECT FILE / <span id="project-index">01</span></div>
+                </div>
+
+                <div class="project-description">
+                    <div class="description-top">
+                        <span class="description-number" id="project-card-number">01</span>
+                        <span class="description-type" id="project-card-type">WEB / UI</span>
+                    </div>
+                    <h2 id="project-card-title">NIPLE</h2>
+                    <p id="project-card-description">Native Low-Latency Windows → Mac Wireless Speaker Turn your MacBook into a high-fidelity, real-time wireless speaker for your Windows PC over your local home network (LAN). Optimized for the lowest achievable latency with zero cloud relays, zero screen-capture pipeline overhead, and no WebRTC bloat.</p>
+                    <a id="project-github" class="github-button" href="#" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview" id="preview-skills">
+            <div class="visual-card image-visual">
+                <img src="images/skills.jpg" alt="Skills artwork" class="section-art">
+                <div class="image-tint"></div>
+                <span class="visual-side-label">BUILD / CREATE / REPEAT</span>
+            </div>
+        </div>
+
+        <div class="preview" id="preview-contact">
+            <div class="visual-card image-visual">
+                <img src="images/contact.jpg" alt="Contact artwork" class="section-art contact-art">
+                <div class="image-tint"></div>
+                <span class="visual-side-label">CONNECT / CREATE / COLLABORATE</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- RIGHT: ALL TEXT -->
+    <section class="content-area">
+
+        <article class="content-screen active" id="content-about">
+            <span class="section-number">01 / ABOUT</span>
+            <h1>ABOUT<br>ME</h1>
+            <div class="blue-line"></div>
+            <p>
+                Hello, my name is Eeshwar Aditya. I'm a computer science student studying in Scaler School of Technology.
+                I am interested in web development, game development, and researching new art styles and UI designs.
+                I have a passion for coding and problem-solving and enjoy working on challenging projects while learning new technologies.
+            </p>
+            <div class="small-info">
+                <span>COMPUTER SCIENCE</span><span>GAME DEVELOPMENT</span><span>WEB DEVELOPMENT</span><span>UI/UX DESIGN</span>
+            </div>
+        </article>
+
+        <article class="content-screen" id="content-projects">
+            <span class="section-number">02 / PROJECTS</span>
+            <h1>MY<br>PROJECTS</h1>
+            <div class="blue-line"></div>
+            <p>A collection of projects, experiments and things I've built while learning.</p>
+
+            <div class="project-list">
+                <button class="project-select active" data-project="niple" type="button"><span>01</span>NIPLE</button>
+                <button class="project-select" data-project="afk" type="button"><span>02</span>ATERNOS AFK BOT</button>
+                <button class="project-select" data-project="sst" type="button"><span>03</span>SST OPPORTUNITIES</button>
+                <button class="project-select" data-project="launchpad" type="button"><span>04</span>CAMPUS LAUNCHPAD</button>
+            </div>
+        </article>
+
+        <article class="content-screen" id="content-skills">
+            <span class="section-number">03 / SKILLS</span>
+            <h1>TECH<br>STACK</h1>
+            <div class="blue-line"></div>
+            <div class="skill-list">
+                <div class="skill-row"><span>HTML</span><span>01</span></div>
+                <div class="skill-row"><span>CSS</span><span>02</span></div>
+                <div class="skill-row"><span>JAVASCRIPT</span><span>03</span></div>
+                <div class="skill-row"><span>PYTHON</span><span>04</span></div>
+                <div class="skill-row"><span>LUAU</span><span>05</span></div>
+            </div>
+        </article>
+
+        <article class="content-screen" id="content-contact">
+            <span class="section-number">04 / SOCIALS</span>
+            <h1>LET'S<br>CONNECT</h1>
+            <div class="blue-line"></div>
+            <p>Have a project or idea? Let's build something interesting.</p>
+            <div class="contact-list">
+                <a href="https://github.com/black-reaper000" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+                <a href="https://www.linkedin.com/in/shun0-0-6469ba377/">LINKEDIN ↗</a>
+                <a href="eeshwar.26bcs10658@sst.scaler.com">EMAIL ↗</a>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<div id="transition" aria-hidden="true">
+    <div class="transition-panel black"></div>
+    <div class="transition-panel blue"></div>
+    <div class="transition-panel cyan"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

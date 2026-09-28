@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#00d9ff" opacity=".35"/>
+    </pattern>
+    <linearGradient id="cyanBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e7ff"/>
+      <stop offset="1" stop-color="#0875ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: "Courier New", monospace; }
+      .sans { font-family: Arial, Helvetica, sans-serif; }
+      .white { fill:#f7fbff; }
+      .cyan { fill:#00e7ff; }
+      .line { stroke:#00e7ff; stroke-width:3; fill:none; }
+      .panel { fill:#071426; stroke:#00dfff; stroke-width:2; }
+      .label { fill:#f7fbff; font-family:Arial,Helvetica,sans-serif; font-weight:800; font-size:20px; }
+      .small { fill:#dcefff; font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#050a12"/>
+  <path d="M0 0H1600L1380 210H0Z" fill="#071d35"/>
+  <path d="M0 690L470 0H760L250 900H0Z" fill="#003d91" opacity=".9"/>
+  <path d="M900 0H1600V900H1120L1450 0Z" fill="url(#cyanBlue)" opacity=".9"/>
+  <path d="M0 820L540 170L760 220L190 900Z" fill="#00e7ff" opacity=".85"/>
+  <path d="M980 900L1500 150L1600 220V900Z" fill="#0039a8"/>
+  <rect x="40" y="40" width="1520" height="820" fill="url(#dots)" opacity=".35"/>
+
+  <!-- title -->
+  <text x="55" y="105" class="sans white" font-size="100" font-weight="900" font-style="italic" letter-spacing="-5">NIPLE</text>
+  <text x="620" y="65" class="sans white" font-size="18" font-weight="800" letter-spacing="7">LOW LATENCY</text>
+  <text x="620" y="92" class="sans white" font-size="18" font-weight="800" letter-spacing="7">AUDIO STREAMING</text>
+  <text x="620" y="119" class="sans cyan" font-size="18" font-weight="800" letter-spacing="7">ACROSS DEVICES</text>
+
+  <!-- device headers -->
+  <path d="M365 155L720 130L760 175L405 200Z" fill="#f7fbff"/>
+  <text x="410" y="178" class="sans" font-size="27" font-weight="900" fill="#071426">WINDOWS PC</text>
+
+  <path d="M930 155L1265 130L1305 175L970 200Z" fill="#f7fbff"/>
+  <text x="1000" y="178" class="sans" font-size="27" font-weight="900" fill="#071426">MACBOOK</text>
+
+  <!-- left stack -->
+  <rect x="365" y="215" width="395" height="610" class="panel"/>
+  <g>
+    <rect x="395" y="245" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="420" y="273" class="label">SYSTEM AUDIO</text>
+    <text x="420" y="296" class="small">(WASAPI)</text>
+
+    <rect x="395" y="330" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="420" y="358" class="label">FORMAT NORM</text>
+    <text x="420" y="381" class="small">48kHz STEREO</text>
+
+    <rect x="395" y="415" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="420" y="443" class="label">ENCODER</text>
+    <text x="420" y="466" class="small">PCM / OPUS</text>
+
+    <rect x="395" y="500" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="420" y="528" class="label">UDP AUDIO SOCKET</text>
+    <text x="420" y="551" class="small">PORT 40000</text>
+
+    <rect x="395" y="585" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="420" y="613" class="label">UDP CONTROL / PING</text>
+    <text x="420" y="636" class="small">PORT 40001</text>
+
+    <rect x="395" y="670" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="420" y="698" class="label">mDNS DISCOVERY</text>
+    <text x="420" y="721" class="small">BROWSER</text>
+
+    <g class="cyan" font-size="25" font-family="Arial" text-anchor="middle">
+      <text x="562" y="326">↓</text><text x="562" y="411">↓</text>
+      <text x="562" y="496">↓</text><text x="562" y="581">↓</text>
+      <text x="562" y="666">↓</text>
+    </g>
+  </g>
+
+  <!-- right stack -->
+  <rect x="920" y="215" width="395" height="610" class="panel"/>
+  <g>
+    <rect x="950" y="245" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="975" y="273" class="label">COREAUDIO</text>
+    <text x="975" y="296" class="small">OUTPUT DEVICE</text>
+
+    <rect x="950" y="330" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="975" y="358" class="label">VOLUME SCALING</text>
+    <text x="975" y="381" class="small">0–150%</text>
+
+    <rect x="950" y="415" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="975" y="443" class="label">AUDIO DECODER</text>
+    <text x="975" y="466" class="small">PCM / OPUS</text>
+
+    <rect x="950" y="500" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="975" y="528" class="label">ADAPTIVE JITTER</text>
+    <text x="975" y="551" class="small">BUFFER</text>
+
+    <rect x="950" y="585" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="975" y="613" class="label">UDP AUDIO SOCKET</text>
+    <text x="975" y="636" class="small">PORT 40000</text>
+
+    <rect x="950" y="670" width="335" height="65" fill="#0b213a" stroke="#00e7ff"/>
+    <text x="975" y="698" class="label">UDP CONTROL SERVER</text>
+    <text x="975" y="721" class="small">PORT 40001</text>
+
+    <g class="cyan" font-size="25" font-family="Arial" text-anchor="middle">
+      <text x="1117" y="326">↓</text><text x="1117" y="411">↓</text>
+      <text x="1117" y="496">↓</text><text x="1117" y="581">↓</text>
+      <text x="1117" y="666">↓</text>
+    </g>
+  </g>
+
+  <!-- central data paths -->
+  <path d="M760 430H900" stroke="#00e7ff" stroke-width="5"/>
+  <path d="M880 418L900 430L880 442" fill="#00e7ff"/>
+  <text x="830" y="400" class="sans white" font-size="19" font-weight="900" text-anchor="middle">DIRECT UDP</text>
+  <text x="830" y="425" class="sans cyan" font-size="15" font-weight="800" text-anchor="middle">AUDIO STREAM</text>
+
+  <path d="M900 545H760" stroke="#00e7ff" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M780 533L760 545L780 557" fill="#00e7ff"/>
+  <text x="830" y="520" class="sans white" font-size="18" font-weight="900" text-anchor="middle">PING / PONG</text>
+  <text x="830" y="545" class="sans cyan" font-size="14" font-weight="800" text-anchor="middle">RTT MEASUREMENT</text>
+
+  <!-- dashboard -->
+  <path d="M920 770H1315V825H920Z" fill="#071426" stroke="#00e7ff" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="945" y="803" class="sans white" font-size="17" font-weight="900">OPTIONAL WEB DASHBOARD</text>
+  <text x="945" y="822" class="small">HTTPS : 8443 • SELF-SIGNED</text>
+
+  <text x="60" y="820" class="sans cyan" font-size="14" font-weight="900" letter-spacing="4">P3R-INSPIRED TECH VISUAL</text>
+  <text x="1360" y="820" class="sans white" font-size="14" font-weight="900" letter-spacing="3">SAME BEAT / DIFFERENT SCREEN</text>
+</svg>

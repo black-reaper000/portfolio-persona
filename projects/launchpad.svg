@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050914"/>
+      <stop offset=".5" stop-color="#062650"/>
+      <stop offset="1" stop-color="#00147a"/>
+    </linearGradient>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.8" fill="#00e7ff" opacity=".28"/>
+    </pattern>
+    <style>
+      .sans { font-family: Arial, Helvetica, sans-serif; }
+      .white { fill:#f7fbff; }
+      .cyan { fill:#00e7ff; }
+      .panel { fill:#071426; stroke:#00dfff; stroke-width:2; }
+      .box { fill:#0a1d35; stroke:#00dfff; stroke-width:2; }
+      .label { fill:#f7fbff; font-family:Arial,Helvetica,sans-serif; font-size:18px; font-weight:900; }
+      .small { fill:#cfe8fa; font-family:Arial,Helvetica,sans-serif; font-size:14px; font-weight:700; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 0H1600L1300 240H0Z" fill="#071a31"/>
+  <path d="M0 760L470 0H710L190 900H0Z" fill="#0048ae" opacity=".82"/>
+  <path d="M1080 0H1600V900H1180L1500 0Z" fill="#00c7ed" opacity=".46"/>
+  <path d="M0 850L520 170L750 240L190 900Z" fill="#00e7ff" opacity=".48"/>
+  <rect x="30" y="30" width="1540" height="840" fill="url(#dots)"/>
+
+  <!-- Header -->
+  <text x="55" y="100" class="sans white" font-size="78" font-weight="900" font-style="italic" letter-spacing="-4">CAMPUS</text>
+  <text x="55" y="166" class="sans cyan" font-size="58" font-weight="900" font-style="italic" letter-spacing="-2">LAUNCHPAD</text>
+  <text x="650" y="68" class="sans white" font-size="17" font-weight="900" letter-spacing="5">STUDENT PROJECT</text>
+  <text x="650" y="95" class="sans cyan" font-size="17" font-weight="900" letter-spacing="5">DISCOVERY + COLLABORATION</text>
+
+  <!-- STUDENT -->
+  <path d="M70 220L400 195L430 240L100 265Z" fill="#f7fbff"/>
+  <text x="120" y="245" class="sans" font-size="24" font-weight="900" fill="#071426">STUDENT</text>
+  <rect x="70" y="280" width="365" height="500" class="panel"/>
+
+  <rect x="100" y="315" width="305" height="70" class="box"/>
+  <text x="125" y="344" class="label">DISCOVER</text>
+  <text x="125" y="367" class="small">PROJECTS / TEAMS / IDEAS</text>
+
+  <rect x="100" y="410" width="305" height="70" class="box"/>
+  <text x="125" y="439" class="label">BUILD PROFILE</text>
+  <text x="125" y="462" class="small">SKILLS / INTERESTS / WORK</text>
+
+  <rect x="100" y="505" width="305" height="70" class="box"/>
+  <text x="125" y="534" class="label">JOIN</text>
+  <text x="125" y="557" class="small">FIND A TEAM / COLLABORATE</text>
+
+  <rect x="100" y="600" width="305" height="70" class="box"/>
+  <text x="125" y="629" class="label">LAUNCH</text>
+  <text x="125" y="652" class="small">PUBLISH PROJECT / SHOWCASE</text>
+
+  <rect x="100" y="695" width="305" height="55" fill="#06182c" stroke="#00e7ff" stroke-dasharray="7 5"/>
+  <text x="125" y="728" class="small">STUDENT PORTFOLIO SIGNAL</text>
+
+  <!-- PLATFORM -->
+  <path d="M505 220L950 195L980 240L535 265Z" fill="#f7fbff"/>
+  <text x="575" y="245" class="sans" font-size="24" font-weight="900" fill="#071426">LAUNCHPAD CORE</text>
+  <rect x="505" y="280" width="475" height="500" class="panel"/>
+
+  <rect x="540" y="315" width="405" height="70" class="box"/>
+  <text x="565" y="344" class="label">PROJECT DISCOVERY</text>
+  <text x="565" y="367" class="small">SEARCH / TAGS / CATEGORIES</text>
+
+  <rect x="540" y="410" width="405" height="70" class="box"/>
+  <text x="565" y="439" class="label">TEAM MATCHING</text>
+  <text x="565" y="462" class="small">SKILLS ↔ ROLES ↔ PROJECT NEEDS</text>
+
+  <rect x="540" y="505" width="405" height="70" fill="#003d82" stroke="#00e7ff" stroke-width="2"/>
+  <text x="565" y="534" class="label">PROJECT WORKSPACE</text>
+  <text x="565" y="557" class="small">MEMBERS / TASKS / PROGRESS</text>
+
+  <rect x="540" y="600" width="405" height="70" class="box"/>
+  <text x="565" y="629" class="label">SHOWCASE</text>
+  <text x="565" y="652" class="small">DEMO / DESCRIPTION / LINKS</text>
+
+  <rect x="540" y="695" width="405" height="55" fill="#06182c" stroke="#00e7ff" stroke-dasharray="7 5"/>
+  <text x="565" y="728" class="small">PROJECT → TEAM → BUILD → SHOWCASE</text>
+
+  <!-- CAMPUS / ORGANIZERS -->
+  <path d="M1050 220L1480 195L1510 240L1080 265Z" fill="#f7fbff"/>
+  <text x="1110" y="245" class="sans" font-size="24" font-weight="900" fill="#071426">CAMPUS ECOSYSTEM</text>
+  <rect x="1050" y="280" width="460" height="500" class="panel"/>
+
+  <rect x="1085" y="315" width="390" height="70" class="box"/>
+  <text x="1110" y="344" class="label">CLUBS / COMMUNITIES</text>
+  <text x="1110" y="367" class="small">PEOPLE / EVENTS / INTERESTS</text>
+
+  <rect x="1085" y="410" width="390" height="70" class="box"/>
+  <text x="1110" y="439" class="label">HACKATHONS / EVENTS</text>
+  <text x="1110" y="462" class="small">CHALLENGES / DEADLINES / TEAMS</text>
+
+  <rect x="1085" y="505" width="390" height="70" class="box"/>
+  <text x="1110" y="534" class="label">MENTORS / CONTRIBUTORS</text>
+  <text x="1110" y="557" class="small">GUIDANCE / FEEDBACK / NETWORK</text>
+
+  <rect x="1085" y="600" width="390" height="70" class="box"/>
+  <text x="1110" y="629" class="label">ADMIN / ORGANIZERS</text>
+  <text x="1110" y="652" class="small">CREATE / MODERATE / FEATURE</text>
+
+  <rect x="1085" y="695" width="390" height="55" fill="#06182c" stroke="#00e7ff" stroke-dasharray="7 5"/>
+  <text x="1110" y="728" class="small">CAMPUS PROJECT NETWORK</text>
+
+  <!-- Connectors -->
+  <g fill="none" stroke="#00e7ff" stroke-width="4">
+    <path d="M435 430H495"/>
+    <path d="M475 418L495 430L475 442"/>
+    <path d="M980 430H1040"/>
+    <path d="M1020 418L1040 430L1020 442"/>
+    <path d="M980 575H1040"/>
+    <path d="M1040 575L1020 563M1040 575L1020 587"/>
+  </g>
+
+  <!-- Bottom flow -->
+  <path d="M430 820H1160" stroke="#00e7ff" stroke-width="3" stroke-dasharray="10 9"/>
+  <text x="795" y="850" class="sans white" font-size="15" font-weight="900" letter-spacing="4" text-anchor="middle">
+    DISCOVER  →  FIND TEAM  →  BUILD  →  LAUNCH  →  SHOWCASE
+  </text>
+
+  <text x="55" y="850" class="sans cyan" font-size="13" font-weight="900" letter-spacing="4">CAMPUS / PROJECT ECOSYSTEM</text>
+  <text x="1280" y="850" class="sans white" font-size="13" font-weight="900" letter-spacing="3">BUILD TOGETHER • SHIP TOGETHER</text>
+</svg>

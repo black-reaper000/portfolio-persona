@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050914"/>
+      <stop offset=".55" stop-color="#062650"/>
+      <stop offset="1" stop-color="#00147a"/>
+    </linearGradient>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.8" fill="#00e7ff" opacity=".28"/>
+    </pattern>
+    <style>
+      .sans { font-family: Arial, Helvetica, sans-serif; }
+      .white { fill:#f7fbff; }
+      .cyan { fill:#00e7ff; }
+      .muted { fill:#c8e4f5; }
+      .panel { fill:#071426; stroke:#00dfff; stroke-width:2; }
+      .box { fill:#0a1d35; stroke:#00dfff; stroke-width:2; }
+      .label { fill:#f7fbff; font-family:Arial,Helvetica,sans-serif; font-size:19px; font-weight:900; }
+      .small { fill:#cfe8fa; font-family:Arial,Helvetica,sans-serif; font-size:14px; font-weight:700; }
+    </style>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 0H1600L1300 240H0Z" fill="#071a31"/>
+  <path d="M0 760L470 0H710L190 900H0Z" fill="#0048ae" opacity=".82"/>
+  <path d="M1080 0H1600V900H1180L1500 0Z" fill="#00c7ed" opacity=".46"/>
+  <path d="M0 850L520 170L750 240L190 900Z" fill="#00e7ff" opacity=".48"/>
+  <rect x="30" y="30" width="1540" height="840" fill="url(#dots)"/>
+
+  <!-- TITLE -->
+  <text x="55" y="100" class="sans white" font-size="78" font-weight="900" font-style="italic" letter-spacing="-4">SST</text>
+  <text x="55" y="166" class="sans cyan" font-size="58" font-weight="900" font-style="italic" letter-spacing="-2">OPPORTUNITIES</text>
+  <text x="640" y="68" class="sans white" font-size="17" font-weight="900" letter-spacing="5">STUDENT OPPORTUNITY</text>
+  <text x="640" y="95" class="sans cyan" font-size="17" font-weight="900" letter-spacing="5">DISCOVERY PLATFORM</text>
+
+  <!-- STUDENT -->
+  <path d="M75 220L405 195L435 240L105 265Z" fill="#f7fbff"/>
+  <text x="125" y="245" class="sans" font-size="24" font-weight="900" fill="#071426">STUDENT</text>
+
+  <rect x="75" y="280" width="360" height="500" class="panel"/>
+
+  <rect x="105" y="315" width="300" height="72" class="box"/>
+  <text x="130" y="345" class="label">DISCOVER</text>
+  <text x="130" y="368" class="small">EVENTS / CLUBS / PROJECTS</text>
+
+  <rect x="105" y="410" width="300" height="72" class="box"/>
+  <text x="130" y="440" class="label">EXPLORE</text>
+  <text x="130" y="463" class="small">CATEGORIES / SKILLS / PATHS</text>
+
+  <rect x="105" y="505" width="300" height="72" class="box"/>
+  <text x="130" y="535" class="label">SAVE</text>
+  <text x="130" y="558" class="small">KEEP USEFUL OPPORTUNITIES</text>
+
+  <rect x="105" y="600" width="300" height="72" class="box"/>
+  <text x="130" y="630" class="label">APPLY / JOIN</text>
+  <text x="130" y="653" class="small">FOLLOW THE OPPORTUNITY FLOW</text>
+
+  <rect x="105" y="695" width="300" height="55" fill="#06182c" stroke="#00e7ff" stroke-dasharray="7 5"/>
+  <text x="130" y="728" class="small">PERSONALIZED DISCOVERY</text>
+
+  <!-- PLATFORM -->
+  <path d="M520 220L930 195L960 240L550 265Z" fill="#f7fbff"/>
+  <text x="585" y="245" class="sans" font-size="24" font-weight="900" fill="#071426">OPPORTUNITY ENGINE</text>
+
+  <rect x="520" y="280" width="440" height="500" class="panel"/>
+
+  <rect x="555" y="315" width="370" height="70" class="box"/>
+  <text x="580" y="344" class="label">OPPORTUNITY CATALOG</text>
+  <text x="580" y="367" class="small">EVENTS / CLUBS / PROJECTS / ROLES</text>
+
+  <rect x="555" y="410" width="370" height="70" class="box"/>
+  <text x="580" y="439" class="label">SEARCH + FILTERS</text>
+  <text x="580" y="462" class="small">TYPE / INTEREST / SKILL / STATUS</text>
+
+  <rect x="555" y="505" width="370" height="70" fill="#003d82" stroke="#00e7ff" stroke-width="2"/>
+  <text x="580" y="534" class="label">RECOMMENDATION LAYER</text>
+  <text x="580" y="557" class="small">MATCH STUDENT INTERESTS</text>
+
+  <rect x="555" y="600" width="370" height="70" class="box"/>
+  <text x="580" y="629" class="label">DETAIL PAGES</text>
+  <text x="580" y="652" class="small">DESCRIPTION / DEADLINE / LINKS</text>
+
+  <rect x="555" y="695" width="370" height="55" fill="#06182c" stroke="#00e7ff" stroke-dasharray="7 5"/>
+  <text x="580" y="728" class="small">CENTRALIZED OPPORTUNITY DATA</text>
+
+  <!-- ADMIN / SOURCES -->
+  <path d="M1050 220L1480 195L1510 240L1080 265Z" fill="#f7fbff"/>
+  <text x="1120" y="245" class="sans" font-size="24" font-weight="900" fill="#071426">CAMPUS SOURCES</text>
+
+  <rect x="1050" y="280" width="460" height="500" class="panel"/>
+
+  <rect x="1085" y="315" width="390" height="70" class="box"/>
+  <text x="1110" y="344" class="label">CLUBS</text>
+  <text x="1110" y="367" class="small">ACTIVITIES / COMMUNITIES</text>
+
+  <rect x="1085" y="410" width="390" height="70" class="box"/>
+  <text x="1110" y="439" class="label">EVENTS</text>
+  <text x="1110" y="462" class="small">HACKATHONS / WORKSHOPS / MEETS</text>
+
+  <rect x="1085" y="505" width="390" height="70" class="box"/>
+  <text x="1110" y="534" class="label">PROJECTS</text>
+  <text x="1110" y="557" class="small">STUDENT-BUILT / CAMPUS PROJECTS</text>
+
+  <rect x="1085" y="600" width="390" height="70" class="box"/>
+  <text x="1110" y="629" class="label">ADMIN / ORGANIZERS</text>
+  <text x="1110" y="652" class="small">CREATE / UPDATE LISTINGS</text>
+
+  <rect x="1085" y="695" width="390" height="55" fill="#06182c" stroke="#00e7ff" stroke-dasharray="7 5"/>
+  <text x="1110" y="728" class="small">FRESH CAMPUS INFORMATION</text>
+
+  <!-- CONNECTORS -->
+  <g fill="none" stroke="#00e7ff" stroke-width="4">
+    <path d="M435 430H510"/>
+    <path d="M490 418L510 430L490 442"/>
+
+    <path d="M960 430H1040"/>
+    <path d="M1020 418L1040 430L1020 442"/>
+
+    <path d="M960 575H1040"/>
+    <path d="M1040 575L1020 563M1040 575L1020 587"/>
+  </g>
+
+  <!-- LOOP / FLOW LABEL -->
+  <path d="M450 820H1150" stroke="#00e7ff" stroke-width="3" stroke-dasharray="10 9"/>
+  <text x="800" y="850" class="sans white" font-size="15" font-weight="900" letter-spacing="4" text-anchor="middle">
+    DISCOVER  →  FILTER  →  EXPLORE  →  APPLY / JOIN  →  RETURN
+  </text>
+
+  <text x="55" y="850" class="sans cyan" font-size="13" font-weight="900" letter-spacing="4">SST / OPPORTUNITY DISCOVERY</text>
+  <text x="1280" y="850" class="sans white" font-size="13" font-weight="900" letter-spacing="3">STUDENT-FIRST PLATFORM</text>
+</svg>
